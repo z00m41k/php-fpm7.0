@@ -67,19 +67,6 @@ RUN usermod -aG www-data www-data
 # Reconfigure system time
 RUN  dpkg-reconfigure -f noninteractive tzdata
 
-# Clear all packages and temp files
-RUN	apt-get clean -yqq \
-	&& apt-get purge php7.0-dev -yqq \
-	&& apt-get purge git -yqq \
-	&& apt-get purge gcc -yqq \
-	&& apt-get purge make -yqq \
-	&& apt-get purge wget -yqq \
-	&& apt-get purge curl -yqq
-
-RUN rm -rf /var/lib/apt/lists/* \
-	&& rm -rf /tmp/* \
-	&& apt-get clean -yqq
-
 COPY start.sh /start.sh
 RUN chmod +x /start.sh
 
