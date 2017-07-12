@@ -41,10 +41,6 @@ RUN apt-get update -yqq \
 	php7.0-curl \
 	php7.0-gd  \
 	php7.0-dev \
-	php7.0-redis \
-	php7.0-memcached \
-	php7.0-mongodb \
-    php7.0-imagick \
     php7.0-fpm \
     && apt-get install -y -q --no-install-recommends \
        ssmtp
