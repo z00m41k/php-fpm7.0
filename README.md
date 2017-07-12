@@ -1,6 +1,6 @@
 ## PHP-FPM Image
 
- **Helpful PHP-FPM image from official debian:jessie**
+ **Helpful PHP-FPM image from official ubuntu:xenial**
  >
  > PHP-FPM version - 7.0.18
 
