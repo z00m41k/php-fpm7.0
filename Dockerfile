@@ -9,8 +9,8 @@ FROM ubuntu:xenial
 MAINTAINER Aseev Dmitriy <dimaaseev.94@gmail.com>
 
 LABEL Vendor="z00m41k"
-LABEL Description="PHP-FPM v7.0.18"
-LABEL Version="1.0.0"
+LABEL Description="PHP-FPM v7.0.22"
+LABEL Version="1.0.1"
 
 ENV LYBERTEAM_TIME_ZONE Europe/Kiev
 
