@@ -3,4 +3,4 @@ timezone: Europe/Kiev
 webrick:
   headers:
     My-Header: PHP-FPM stable and fast container
-    My-Other-Header: Docker image z00m41k/php-fpm-7.0.12
+    My-Other-Header: Docker image z00m41k/php-fpm-7.0.22
