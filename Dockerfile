@@ -45,6 +45,9 @@ RUN apt-get update -yqq \
     && apt-get install -y -q --no-install-recommends \
        ssmtp
 
+# Download and install wkhtmltopdf
+RUN apt-get install xvfb libfontconfig wkhtmltopdf -y
+
 # Add default timezone
 RUN echo $LYBERTEAM_TIME_ZONE > /etc/timezone
 RUN echo "date.timezone=$LYBERTEAM_TIME_ZONE" > /etc/php/7.0/cli/conf.d/timezone.ini
